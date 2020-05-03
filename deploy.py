@@ -11,7 +11,7 @@ def postVolume():
     global volume
     volume += (data['glicerina']) #confirmar como thomas vai mandar a glicerina
 
-    return 200
+    return {'glicerina':volume}
 
 
 @app.route('/glicerina', methods=['GET'])
